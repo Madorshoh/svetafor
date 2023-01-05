@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 250px;
+    height: 550px;
+    background-color: black;
+    margin: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.qizil,.sariq,.yashil{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(53, 51, 51);
+    margin-top: 15px;    
+}
+.qizil{
+    animation-name: sveta;
+    animation-duration: 10s;
+}
+@keyframes sveta{
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: rgb(53, 51, 51);
+    }
+}
+
+.sariq{
+    animation-name: sariq;
+    animation-duration: 10s;
+    animation-delay: 5s;
+}
+@keyframes sariq{
+    from{
+        background-color: yellow;
+    }
+    to{
+        background-color: rgb(53, 51, 51);
+    }
+}
+.yashil{
+    animation-name: yashil;
+    animation-duration: 5s;
+    animation-delay: 10s;
+}
+@keyframes yashil{
+    from{
+        background-color: green;
+    }
+    to{
+        background-color: rgb(53, 51, 51);
+    }
+}
